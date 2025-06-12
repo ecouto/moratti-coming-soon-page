@@ -26,20 +26,20 @@ const Index = () => {
           {/* Logo */}
           <div className="animate-fade-in">
             <img 
-              src="/lovable-uploads/f4ef8ced-0cb5-44fa-97f2-da6610489339.png" 
+              src="/lovable-uploads/f89c15d6-2dfe-4c96-aaa6-5c601f449bf8.png" 
               alt="Casa Moratti Logo" 
-              className="w-64 h-auto mx-auto mb-8 hover:scale-105 transition-transform duration-300"
+              className="w-72 h-auto mx-auto mb-12 hover:scale-105 transition-transform duration-300"
             />
           </div>
 
           {/* Main heading */}
           <div className="animate-fade-in delay-200">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-gradient-moratti mb-4">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-playfair font-bold text-gradient-moratti mb-6 tracking-tight">
               Em Breve
             </h1>
-            <div className="flex items-center justify-center space-x-2 text-muted-foreground mb-6">
+            <div className="flex items-center justify-center space-x-2 text-muted-foreground mb-8">
               <Clock className="w-5 h-5" />
-              <span className="text-lg">Estamos preparando algo especial para você</span>
+              <span className="text-lg font-light">Estamos preparando algo especial para você</span>
             </div>
           </div>
 
