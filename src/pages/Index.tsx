@@ -26,7 +26,7 @@ const Index = () => {
           {/* Logo */}
           <div className="animate-fade-in">
             <img 
-              src="/lovable-uploads/fdc8fdb4-8d9a-42bf-a0a4-270e4909b111.png" 
+              src="/lovable-uploads/3a207030-8af5-4da4-baee-f0266b394e0a.png" 
               alt="Casa Moratti Logo" 
               className="w-64 h-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300"
             />
