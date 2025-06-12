@@ -28,7 +28,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/f4ef8ced-0cb5-44fa-97f2-da6610489339.png" 
               alt="Casa Moratti Logo" 
-              className="w-64 h-auto mx-auto mb-8 drop-shadow-lg hover:scale-105 transition-transform duration-300"
+              className="w-64 h-auto mx-auto mb-8 hover:scale-105 transition-transform duration-300"
             />
           </div>
 
