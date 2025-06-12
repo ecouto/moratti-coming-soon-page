@@ -1,11 +1,102 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Mail, Phone, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 const Index = () => {
+  const handleWhatsAppClick = () => {
+    window.open("https://wa.me/5511957822750", "_blank");
+  };
+
+  const handleEmailClick = () => {
+    window.location.href = "mailto:contato@casamoratti.com.br";
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-pink-50 to-purple-50 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 rounded-full gradient-moratti-light opacity-30 animate-pulse-slow"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 rounded-full gradient-moratti-light opacity-30 animate-pulse-slow delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full gradient-moratti-light opacity-20 animate-float"></div>
+      </div>
+
+      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          {/* Logo */}
+          <div className="animate-fade-in">
+            <img 
+              src="/lovable-uploads/f4ef8ced-0cb5-44fa-97f2-da6610489339.png" 
+              alt="Casa Moratti Logo" 
+              className="w-64 h-auto mx-auto mb-8 drop-shadow-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+
+          {/* Main heading */}
+          <div className="animate-fade-in delay-200">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-gradient-moratti mb-4">
+              Em Breve
+            </h1>
+            <div className="flex items-center justify-center space-x-2 text-muted-foreground mb-6">
+              <Clock className="w-5 h-5" />
+              <span className="text-lg">Estamos preparando algo especial para você</span>
+            </div>
+          </div>
+
+          {/* Description */}
+          <div className="animate-fade-in delay-300">
+            <p className="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto leading-relaxed font-light">
+              Nossa nova experiência está sendo cuidadosamente desenvolvida. 
+              Enquanto isso, entre em contato conosco para mais informações.
+            </p>
+          </div>
+
+          {/* Contact Cards */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto animate-fade-in delay-500">
+            <Card className="p-6 bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 mx-auto rounded-full gradient-moratti flex items-center justify-center">
+                  <Mail className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-800 mb-2">Email</h3>
+                  <p className="text-slate-600 mb-4">Entre em contato por email</p>
+                  <Button 
+                    onClick={handleEmailClick}
+                    className="w-full gradient-moratti hover:opacity-90 transition-opacity text-white font-medium"
+                  >
+                    contato@casamoratti.com.br
+                  </Button>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 mx-auto rounded-full gradient-moratti flex items-center justify-center">
+                  <Phone className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-800 mb-2">WhatsApp</h3>
+                  <p className="text-slate-600 mb-4">Fale conosco no WhatsApp</p>
+                  <Button 
+                    onClick={handleWhatsAppClick}
+                    className="w-full gradient-moratti hover:opacity-90 transition-opacity text-white font-medium"
+                  >
+                    (11) 95782-2750
+                  </Button>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          {/* Footer message */}
+          <div className="animate-fade-in delay-700">
+            <p className="text-slate-500 text-sm mt-12">
+              © 2024 Casa Moratti. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
