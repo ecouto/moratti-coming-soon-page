@@ -22,22 +22,22 @@ const Index = () => {
       </div>
 
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
+        <div className="max-w-4xl mx-auto text-center space-y-6">
           {/* Logo */}
           <div className="animate-fade-in">
             <img 
-              src="/lovable-uploads/f89c15d6-2dfe-4c96-aaa6-5c601f449bf8.png" 
+              src="/lovable-uploads/fdc8fdb4-8d9a-42bf-a0a4-270e4909b111.png" 
               alt="Casa Moratti Logo" 
-              className="w-72 h-auto mx-auto mb-12 hover:scale-105 transition-transform duration-300"
+              className="w-64 h-auto mx-auto mb-8 hover:scale-105 transition-transform duration-300"
             />
           </div>
 
           {/* Main heading */}
           <div className="animate-fade-in delay-200">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-playfair font-bold text-gradient-moratti mb-6 tracking-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-poppins font-extrabold text-gradient-moratti mb-4 tracking-wide">
               Em Breve
             </h1>
-            <div className="flex items-center justify-center space-x-2 text-muted-foreground mb-8">
+            <div className="flex items-center justify-center space-x-2 text-muted-foreground mb-6">
               <Clock className="w-5 h-5" />
               <span className="text-lg font-light">Estamos preparando algo especial para você</span>
             </div>
@@ -92,7 +92,7 @@ const Index = () => {
 
           {/* Footer message */}
           <div className="animate-fade-in delay-700">
-            <p className="text-slate-500 text-sm mt-12">
+            <p className="text-slate-500 text-sm mt-8">
               © 2024 Casa Moratti. Todos os direitos reservados.
             </p>
           </div>
