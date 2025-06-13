@@ -2,6 +2,7 @@
 import { Mail, Phone, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const handleWhatsAppClick = () => {
@@ -92,9 +93,24 @@ const Index = () => {
 
           {/* Footer message */}
           <div className="animate-fade-in delay-700">
-            <p className="text-slate-500 text-sm mt-8">
-              © 2025 Casa Moratti. Todos os direitos reservados.
-            </p>
+            <div className="text-slate-500 text-sm mt-8 space-y-2">
+              <p>© 2025 Casa Moratti. Todos os direitos reservados.</p>
+              <div className="flex justify-center space-x-4 text-xs">
+                <Link 
+                  to="/termos-de-uso" 
+                  className="hover:text-slate-700 transition-colors underline"
+                >
+                  Termos de Uso
+                </Link>
+                <span>•</span>
+                <Link 
+                  to="/politica-de-privacidade" 
+                  className="hover:text-slate-700 transition-colors underline"
+                >
+                  Política de Privacidade
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
