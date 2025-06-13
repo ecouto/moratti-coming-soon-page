@@ -93,7 +93,7 @@ const Index = () => {
           {/* Footer message */}
           <div className="animate-fade-in delay-700">
             <p className="text-slate-500 text-sm mt-8">
-              © 2024 Casa Moratti. Todos os direitos reservados.
+              © 2025 Casa Moratti. Todos os direitos reservados.
             </p>
           </div>
         </div>
